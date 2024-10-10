@@ -54,7 +54,7 @@ h2 {
     text-transform: capitalize;
     font-family: 'Bodoni MT Black';
     font-weight: bold;
-    text-shadow: 3px 3px 5px rgba(51, 3, 3, 0.7);/* oultine text*/
+    text-shadow: 5px 5px 5px rgba(223, 7, 7, 0.7);/* oultine text*/
 }
 
 .button-container {
