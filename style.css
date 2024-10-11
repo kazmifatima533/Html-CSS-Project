@@ -5,13 +5,16 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("./bg.jpg");
+    background-image: url("images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;/* Cover the entire viewport */
     background-position: center;
     background-attachment: fixed;/* Image stays fixed when scrolling */
     color: black;
     font-family: "Helvetica Neue", Helvetica, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;/* Prevent scrolling */
 }
 
 nav {
@@ -92,21 +95,16 @@ h2 {
     height: 40px;
 }
 
-footer {
-    color: black;
-    padding: 100px;
-    background-color: transparent;
-    text-align: center;
-    align-items: center;
-    margin-left: 200px;
-}
 
 footer {
-    background-color: #311414;
+    background-color: #4b4b4b;
     color: #fff;
-    padding: 15px 0;
     text-align: center;
-    margin : 0%;
     padding-left: 300px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
 }
 

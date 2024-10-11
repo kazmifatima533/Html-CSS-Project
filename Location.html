@@ -28,15 +28,12 @@
         <section id="photos">
             <h2>Inside & Outside Views</h2>
             <div class="photo-gallery">
-                <img src="out.jpg" alt="Exterior of the Bakery" />
-                <img src="back.jpg" alt="Interior of the Bakery" />
+                <img src="images./out.jpg" alt="Exterior of the Bakery" />
+                <img src="images./back.jpg" alt="Interior of the Bakery" />
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Bakery & Cafe. All rights reserved.</p>
-        <p>Follow us on: <a href="https://www.facebook.com/TheBakersCafe/?_rdr" target="_blank">Facebook</a> | <a href="https://www.instagram.com/thebakerycafepak/?hl=en" target="_blank">Instagram</a></p>
-    </footer>
+    
 </body>
 </html>
 
@@ -45,10 +42,21 @@
 
 /* Body Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(99, 80, 80);
-    color: black;
-}
+        margin: 0;
+        padding: 0;
+        background-image: url("images/all.jpg");
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh; /* Cover the entire viewport */
+        background-position: center;
+        background-attachment: fixed;
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        color: #333;
+        min-height: 100vh; /* Full viewport height */
+        display: flex;
+        flex-direction: column; /* Arrange items vertically */
+    
+    }
+
 
 /* Header Styles */
 header {
@@ -82,14 +90,8 @@ img {
     height: 300px;
 }
 
-footer {
-    background-color: #311414;
-    color: #fff;
-    text-align: center;
-    margin : 0%;
-    padding-left: 50px;
-    margin-top: 50px;
-}
+
+
 
 
 

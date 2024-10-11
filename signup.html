@@ -4,49 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Contact Us - Bakery</title>
+    <title>Sign Up - Bakery</title>
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
+        <h1>Create an Account</h1>
     </header>
     <main>
-        <form action="contact" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Enter your name">
+        <form action="your_signup_script.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <input type="email" id="email" name="email" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required placeholder="Write your message here"></textarea>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
 
-            <button type="submit">Send Message</button>
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="login.html">Login</a></p>
         </form>
     </main>
 </body>
 </html>
 
 <style>
+    /* General styles */
     body {
         margin: 0;
         padding: 0;
-        background-image: url("images/broo.jpg");
+        background-image: url("images/bakee.jpg");
         background-repeat: no-repeat;
-        background-size: 100vw 100vh ;
+        background-size: cover; /* Cover the entire viewport */
         background-position: center;
         background-attachment: fixed;
         font-family: "Helvetica Neue", Helvetica, sans-serif;
         color: #333;
+        min-height: 100vh; /* Full viewport height */
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Arrange items vertically */
         align-items: center;
     }
 
-    /* Header styling */
+    /* Header and h1 styling */
     header {
         width: 100%;
         text-align: center;
+        margin-top: 20px;
     }
 
     header h1 {
@@ -54,26 +58,28 @@
         font-size: 48px;
         font-weight: bold;
         margin: 0;
-        text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.7);
-        padding-top: 90px;
-        
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        padding: 20px 0;
+        margin-bottom: 0%;
+        margin-top: 30px;
     }
 
+    /* Main content styling */
     main {
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
         padding: 30px;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         max-width: 400px;
         width: 100%;
-        margin-top: 40px;
-       
+        margin-top: 10px; /* Center vertically */
+        margin-bottom: auto; /* Center vertically */
     }
 
+    /* Form styling */
     form {
         display: flex;
         flex-direction: column;
-        
     }
 
     label {
@@ -82,7 +88,7 @@
         color: #333;
     }
 
-    input, textarea {
+    input {
         padding: 10px;
         margin-bottom: 20px;
         border: 1px solid #ccc;
@@ -90,10 +96,7 @@
         font-size: 16px;
     }
 
-    textarea {
-        resize: vertical;
-    }
-
+    /* Button styling */
     button {
         background-color: #6b0c0c;
         color: white;
@@ -108,4 +111,22 @@
     button:hover {
         background-color: #550909;
     }
+
+    /* Paragraph and link styling */
+    p {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    p a {
+        color: #6b0c0c;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    p a:hover {
+        text-decoration: underline;
+    }
+
 </style>
