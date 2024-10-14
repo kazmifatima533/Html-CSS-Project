@@ -4,94 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <style>
+        /* Body Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("Images/aboutus.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center;
+            background-attachment: fixed;
+            font-family: "Helvetica Neue", Helvetica, sans-serif;
+            color: #333;
+            min-height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center; /* Center the content */
+            align-items: center; /* Center the content vertically */
+        }
+
+        /* Container Styles */
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+            max-width: 800px; /* Limit the width of the content */
+            width: 90%; /* Make it responsive */
+            margin: 20px; /* Add margin for spacing */
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+        }
+
+        header h1 {
+            color: black;
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 0;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            
+        }
+
+        h3, h2 {
+            color: #555;
+            font-size: 25px;
+            text-decoration: underline;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #333;
+            font-size: 15px;
+            margin-bottom: 20px;
+            line-height: 1.6; /* Improve readability */
+        }
+
+        /* Image Styles */
+        img {
+            width: 100%;
+            max-width: 500px; /* Restrict the image width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Rounded corners for images */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>About Us</h1>
-    <hr>
-    <h3>Our Passion</h3>
-    <p>We believe in making good bread. 
-       As we’ve grown, so has our menu and our community, yet our values have stayed the same.
-       We take the time to make our bread, pastries, cakes, breakfasts and lunches as we always have – with care, by hand and according to the season – so that we don’t need to compromise on what we eat, whether we’re on the go, or taking time out in one of our bakeries.
-       Everyone is welcome in our bakeries. 
-       We believe in the power of community, in helping those around us and living as sustainably as possible. 
-       We insist on the finest ingredients, supporting small businesses wherever we can, and though we’re always innovating, our baking is based on time-honoured techniques and our decades-old starters. 
-       Nothing gives us as much pleasure as a freshly baked, lovingly crafted loaf.</p>
-       <img src="images./bread.jpg" alt="bread" width="400vw" height="400vh"/>
-    <br>
+    <div class="container">
+        <header>
+            <h1>About Us</h1>
+        </header>
+        <hr>
+        <h3>Our Passion</h3>
+        <p>We believe in making good bread. 
+           As we’ve grown, so has our menu and our community, yet our values have stayed the same.
+           We take the time to make our bread, pastries, cakes, breakfasts, and lunches as we always have – with care, by hand and according to the season – so that we don’t need to compromise on what we eat, whether we’re on the go or taking time out in one of our bakeries.
+           Everyone is welcome in our bakeries. 
+           We believe in the power of community, in helping those around us, and living as sustainably as possible. 
+           We insist on the finest ingredients, supporting small businesses wherever we can, and though we’re always innovating, our baking is based on time-honoured techniques and our decades-old starters. 
+           Nothing gives us as much pleasure as a freshly baked, lovingly crafted loaf.</p>
+        <img src="Images/bread.jpg" alt="Our bread">
 
-    <h2>Our Story</h2>
-    <p>We bake fresh, handmade bread, pastries and cakes every day, served with our carefully-sourced house blend speciality coffee. 
-       We take great pleasure in using the best ingredients we can find for food and drink, using seasonal ingredients from suppliers we trust.
-       Though we’ve grown over the years, our philosophy has remained the same: to make good food that people love, and create bakeries that people want to keep coming back to. 
-       Second, only to the love for our mother doughs, we take the most joy from daily chats with our regular customers, many of whom have been with us since we started.
-       We hope you’ll join us soon..</p>
-        <img src="images./abt.jpg" alt="about" width="500vw" height="300vh">
-    <br>
+        <h2>Our Story</h2>
+        <p>We bake fresh, handmade bread, pastries, and cakes every day, served with our carefully-sourced house blend specialty coffee. 
+           We take great pleasure in using the best ingredients we can find for food and drink, using seasonal ingredients from suppliers we trust.
+           Though we’ve grown over the years, our philosophy has remained the same: to make good food that people love, and create bakeries that people want to keep coming back to. 
+           Second, only to the love for our mother doughs, we take the most joy from daily chats with our regular customers, many of whom have been with us since we started.
+           We hope you’ll join us soon.</p>
+        <img src="Images/abt.jpg" alt="About us">
 
-    <h2>Join Us</h2>
-     <p>We are looking to grow our team. Help us reinvent the neighbourhood bakery and join us in our love of baking.</p>
-       <img src="images./joinus.jpg" alt="about" width="500vw" height="300vh">
-
-
+        <h2>Join Us</h2>
+        <p>We are looking to grow our team. Help us reinvent the neighbourhood bakery and join us in our love of baking.</p>
+        <img src="Images/joinus.jpg" alt="Join us">
+    </div>
 </body>
 </html>
-
-
-<style>
-
-   body {
-        margin: 0;
-        padding: 0;
-        background-image: url("images/aboutt.jpg");
-        background-repeat: no-repeat;
-        background-size: 80vw 80vh; /* Cover the entire viewport */
-        background-position: center;
-        background-attachment: fixed;
-        font-family: "Helvetica Neue", Helvetica, sans-serif;
-        color: #333;
-        min-height: 100vh; /* Full viewport height */
-        display: flex;
-        flex-direction: column; /* Arrange items vertically */
-    
-    }
-
-
-
-   h1 {
-    
-    color: #333;
-    text-align: center;
-    font-size: 45px;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 20px 0;
-    }
-
-
-    h3 {
-        color: black;
-        font-size: 25px;
-        text-transform: capitalize;
-        font-family: 'default';
-        text-decoration: underline;
-    
-    }
-
-    h2 {
-        color: black;
-        font-size: 25px;
-        text-transform: capitalize;
-        font-family: 'default';
-        text-decoration: underline;
-    
-    }
-
-    p {
-        color: black;
-        font-size: 15px;
-        text-transform: capitalize;
-        font-family: 'default';
-
-    }
-
-    
