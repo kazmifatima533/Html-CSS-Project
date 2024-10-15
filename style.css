@@ -3,15 +3,14 @@
     text-decoration: none;
 }
 
-
 body {
     margin: 0;/* Remove default margin */
     padding: 0;/* Remove default padding */
     background-image: url("Images/bg.jpg");
     background-repeat: no-repeat;/* Prevent background image from repeating */
-    background-size: cover; /* Cover the entire viewport */
+    background-size: cover;/* Cover the entire viewport */
     background-position: center; /* Center the background image */
-    background-attachment: fixed; /* Fix the background image when scrolling */
+    background-attachment: fixed;/* Fix the background image when scrolling */
     color: black;
     font-family: "Helvetica Neue", Helvetica, sans-serif;
     width: 100%;
@@ -21,10 +20,10 @@ body {
 
 /* Style for the navigation bar */
 nav.navbar {
-    display: flex; /* Use flexbox for layout */
+    display: flex;/* Use flexbox for layout */
     justify-content: space-between;/* Space out items evenly */
-    align-items: center;/* Center items vertically */
-    background-color: white;
+    align-items: center; /* Center items vertically */
+    background-color: #533b3b;
     padding: 0 20px; /* Add left and right padding for space */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -36,45 +35,46 @@ nav.navbar {
     margin-right: 30px;
 }
 
-
 /* Style for the navigation list */
 ul {
     list-style-type: none; /* Remove bullet points from list */
     padding: 0;
     margin: 0;
-    display: flex; /* Display list items in a row */
+    display: inline-block; /* Display list items properly */
 }
 
 /* Style for each list item in the navigation */
 li {
-    margin-right: 70px;/* Space between list items */
+    margin-right: 100px; /* Space between list items */
     text-transform: capitalize;
     font-size: large;
-    display: flex; /* Use flex to center items vertically */
-    align-items: center;
-    justify-content: center;
+    display: inline-block;/* Use inline-block to align list items in center */
     text-decoration: underline;
 }
 
 /* Style for the navigation links */
 nav.navbar ul li a {
-    color: black;
+    color: white;
     font-weight: normal;
+    text-decoration: underline;/* Fix: changed from 'white underline' */
 }
 
 /* Focus state for navigation links */
 nav.navbar ul li a:focus {
-    outline: none;/* Remove any outline */
-    color: rgb(107, 12, 12);/* Change the color on focus as you would on hover */
+    outline: none; /* Remove any outline */
+    color: rgb(107, 12, 12); /* Change the color on focus as you would on hover */
 }
 
 /* Hover state for navigation links */
-nav.navbar ul li a:hover,
-nav.navbar ul li a:active {
-    color: rgb(107, 12, 12); /* Change link color on hover or active */
-    text-decoration: underline;/* Underline text on hover or active */
+nav.navbar ul li a:hover {/* mouse over link */
+    color: rgb(145, 52, 52);
+    text-decoration: underline;
 }
 
+nav.navbar ul li a:active { /* selected link */
+    color: rgb(107, 12, 12);
+    text-decoration: underline;
+}
 
 /* Style for the main heading */
 h2 {
@@ -91,11 +91,10 @@ h2 {
 /* Container for the order button */
 .button-container {
     height: 100vh;
-    display: flex;
+    display: flex; /* Align the button container horizontally */
     justify-content: center;
     align-items: center;
 }
-
 
 /* Style for the "Order Now" button */
 .button {
@@ -103,274 +102,150 @@ h2 {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 10px;/* Rounded corners */
+    border-radius: 10px; /* Rounded corners */
     font-size: 20px;
     margin-bottom: 550px;
-    cursor: pointer; /* Change cursor to pointer on hover */
+    cursor: pointer;/* Change cursor to pointer on hover */
 }
 
 /* Hover state for the "Order Now" button */
 .button:hover {
-    background-color: rgb(130, 20, 20);/* Darken background color on hover */
-    transform: scale(1.05);/* Slightly enlarge the button */
+    background-color: rgb(130, 20, 20); /* Darken background color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
 }
 
 /* Focus state for the "Order Now" button */
 .button:focus {
     outline: 2px solid #fff;
-    /* Add white outline on focus */
-    outline-offset: 2px;
-    /* Space between outline and button */
 }
 
 /* Active state for the "Order Now" button */
 .button:active {
     background-color: rgb(80, 1, 1);
-    transform: scale(0.98);
-    /* Slightly shrink the button */
 }
 
 /* Container for authentication buttons (Login & Sign Up) */
 .auth-buttons {
-    display: flex;
-    /* Align buttons in a row */
-    margin-left: auto;
-    /* Push buttons to the right */
-    gap: 10px;
-    /* Adds a gap between buttons */
+    display: flex;/* Align buttons in a row */
+    margin-left: auto;/* Push buttons to the right */
+    gap: 10px;/* Adds a gap between buttons */
 }
 
 /* Style for the authentication buttons */
 .button2 {
     background-color: rgb(80, 1, 1);
-    /* Set background color */
     color: white;
-    /* Set text color to white */
     padding: 10px 20px;
-    /* Add padding */
     border: none;
-    /* Remove border */
-    border-radius: 10px;
-    /* Rounded corners */
+    border-radius: 10px; /* Rounded corners */
     font-size: 16px;
-    /* Set font size */
     height: 40px;
-    /* Set button height */
-    cursor: pointer;
-    /* Change cursor to pointer on hover */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    /* Smooth transition for hover effects */
+    cursor: pointer;/* Change cursor to pointer on hover */
 }
 
 /* Hover state for authentication buttons */
 .button2:hover {
-    background-color: rgb(100, 10, 10);
-    /* Darken background color on hover */
-    transform: scale(1.05);
-    /* Slightly enlarge the button */
+    background-color: rgb(136, 30, 30);
+    transform: scale(1.05); /* Slightly enlarge the button */
 }
 
 /* Focus state for authentication buttons */
 .button2:focus {
     outline: 2px solid #fff;
-    /* Add white outline on focus */
-    outline-offset: 2px;
-    /* Space between outline and button */
 }
 
 /* Active state for authentication buttons */
 .button2:active {
-    background-color: rgb(60, 0, 0);
-    /* Change background color when active */
+    background-color: rgb(109, 17, 17);
     transform: scale(0.98);
-    /* Slightly shrink the button */
 }
 
 /* Style for the footer */
 footer {
     background-color: #533b3b;
-    /* Set footer background color */
     color: #fff;
-    /* Set footer text color to white */
     text-align: center;
-    /* Center the text */
     padding: 20px 0;
-    /* Add vertical padding */
-    position: fixed;
-    /* Fix the footer at the bottom */
-    bottom: 0;
-    /* Align to the bottom */
-    left: 0;
-    /* Align to the left */
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0;/* Align to the bottom */
+    left: 0; /* Align to the left */
     width: 100%;
-    /* Full width */
-    display: flex;
-    /* Use flexbox for layout */
-    justify-content: center;
-    /* Center items horizontally */
-    align-items: center;
-    /* Center items vertically */
+    display: flex;/* Use flexbox for layout */
+    justify-content: center;/* Center items horizontally */
+    align-items: center; /* Center items vertically */
 }
 
 /* Style for the footer list */
 footer ul {
-    list-style-type: none;
-    /* Remove bullet points */
-    display: flex;
-    /* Display list items in a row */
-    gap: 20px;
-    /* Add space between items */
-    padding: 0;
-    /* Remove padding */
-    margin: 0;
-    /* Remove margin */
+    list-style-type: none; /* Remove bullet points */
+    display: flex;/* Display list items in a row */
+    gap: 30px; /* Add space between items */
+    padding: 0; /* Remove padding */
+    margin-left: 50px;
 }
 
 /* Style for footer links */
 footer a {
     color: white;
-    /* Set link color to white */
     font-size: 14px;
-    /* Set font size */
-    transition: color 0.3s ease;
-    /* Smooth transition for hover effects */
 }
 
 /* Hover state for footer links */
 footer a:hover {
-    color: #ddd;
-    /* Lighten link color on hover */
+    color: #866464;
 }
 
-/* Media Queries for Responsive Design */
-
-/* For devices with a maximum width of 768px (tablets and smaller) */
-@media (max-width: 768px) {
-
-    /* Adjust navigation padding */
-    nav.navbar {
-        padding: 0 10px;
-        /* Reduce left and right padding */
-    }
-
-    /* Stack navigation items vertically */
-    ul {
-        flex-direction: column;
-        /* Change to column layout */
-        align-items: center;
-        /* Center items horizontally */
-    }
-
-    /* Adjust list item margins */
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
     li {
-        margin: 10px 0;
-        /* Add vertical margin */
+        margin-right: 50px; /* Reduce margin between items */
     }
 
-    /* Reduce main heading font size */
     h2 {
-        font-size: 40px;
-        /* Smaller font size for smaller screens */
-        padding-top: 100px;
-        /* Adjust top padding */
+        font-size: 50px;/* Decrease heading size */
     }
 
-    /* Adjust button size and margin */
     .button {
-        font-size: 18px;
-        /* Smaller font size */
-        margin-bottom: 300px;
-        /* Reduce bottom margin */
-    }
-
-    /* Adjust authentication buttons */
-    .button2 {
-        font-size: 14px;
-        /* Smaller font size */
-        padding: 8px 16px;
-        /* Reduce padding */
-    }
-
-    /* Adjust footer padding */
-    footer {
-        padding: 10px 0;
-        /* Reduce vertical padding */
-    }
-
-    /* Adjust footer list spacing */
-    footer ul {
-        flex-direction: column;
-        /* Stack footer items vertically */
-        gap: 10px;
-        /* Reduce gap between items */
+        font-size: 18px; /* Reduce button font size */
     }
 }
 
-/* For devices with a maximum width of 480px (mobile phones) */
-@media (max-width: 480px) {
-
-    /* Further adjust navigation padding */
+@media (max-width: 900px) {
     nav.navbar {
-        padding: 0 5px;
-        /* Further reduce left and right padding */
+        flex-direction: column;/* Stack navigation items vertically */
     }
 
-    /* Hide logo on very small screens */
-    #logo {
-        height: 60px;
-        /* Reduce logo height */
-        width: 60px;
-        /* Reduce logo width */
-        margin-right: 10px;
-        /* Reduce right margin */
+    li {
+        margin: 10px 0;/* Adjust margin for vertical layout */
     }
 
-    /* Reduce main heading font size */
     h2 {
-        font-size: 30px;
-        /* Even smaller font size */
-        padding-top: 80px;
-        /* Adjust top padding */
+        font-size: 40px;/* Further decrease heading size */
     }
 
-    /* Adjust button size and margin */
     .button {
-        font-size: 16px;
-        /* Smaller font size */
-        padding: 8px 16px;
-        /* Reduce padding */
-        margin-bottom: 200px;
-        /* Further reduce bottom margin */
+        width: 100%; /* Full width button */
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: #333; /* Change background color for small screens */
     }
 
-    /* Adjust authentication buttons */
-    .auth-buttons {
-        flex-direction: column;
-        /* Stack buttons vertically */
-        gap: 5px;
-        /* Reduce gap between buttons */
+    nav.navbar {
+        background-color: #444;/* Darker navbar for better visibility */
+    }
+
+    .button {
+        background-color: rgb(50, 1, 1);/* Change button color */
     }
 
     .button2 {
-        width: 100%;
-        /* Make buttons full width */
-        font-size: 14px;
-        /* Smaller font size */
-        padding: 8px 0;
-        /* Adjust padding */
+        background-color: rgb(60, 1, 1); /* Change auth button color */
     }
 
-    /* Adjust footer text size */
-    footer a {
-        font-size: 12px;
-        /* Smaller font size */
-    }
-
-    /* Adjust footer layout */
-    footer ul {
-        flex-direction: column;
-        /* Ensure vertical stacking */
-        gap: 5px;
-        /* Reduce gap */
+    h2 {
+        font-size: 30px; /* Decrease heading size */
     }
 }
