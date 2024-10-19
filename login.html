@@ -123,5 +123,43 @@
         p a:hover {
             text-decoration: underline; /* if we hover on sign up option it will underline */
         }
+
+    /* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 36px; /* Decrease header size */
+    }
+
+    main {
+        padding: 20px; /* Adjust padding */
+    }
+
+    input, button {
+        font-size: 16px; /* Adjust font size for inputs and buttons */
+    }
+
+    p {
+        font-size: 12px; /* Adjust font size for paragraph */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px; /* Further decrease header size */
+    }
+
+    main {
+        width: 95%; /* Make main content wider on smaller screens */
+        padding: 15px; /* Further adjust padding */
+    }
+
+    input, button {
+        font-size: 14px; /* Further adjust font size */
+    }
+
+    p {
+        font-size: 10px; /* Further decrease paragraph font size */
+    }
+}
 </style>
 

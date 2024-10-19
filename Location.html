@@ -91,6 +91,52 @@
             margin-left: auto;
             margin-right: auto;
 }
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Decrease header size */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust section header size */
+    }
+
+    h3 {
+        font-size: 1.2em; /* Adjust subheader size */
+    }
+
+    p, ul {
+        font-size: 14px; /* Decrease text size for better readability */
+    }
+
+    .photo-gallery img {
+        max-width: 100%; /* Allow images to take full width */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Further decrease header size */
+    }
+
+    h2 {
+        font-size: 1.3em; /* Further adjust section header size */
+    }
+
+    h3 {
+        font-size: 1.1em; /* Further adjust subheader size */
+    }
+
+    p, ul {
+        font-size: 12px; /* Further decrease text size */
+    }
+
+    .container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
     </style>
 </head>
 <body>

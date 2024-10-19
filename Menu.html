@@ -273,7 +273,37 @@
     .details:hover {
         background-color: #c0392b;
     }
+ 
+    /* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 48px; /* Decrease header size */
+    }
 
+    h2 {
+        font-size: 24px; /* Adjust category heading size */
+    }
+
+    .menu-item {
+        width: 100%; /* Make items full-width on smaller screens */
+        max-width: 300px; /* Limit max width */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 36px; /* Further decrease header size */
+    }
+
+    h2 {
+        font-size: 20px; /* Further adjust category heading size */
+    }
+
+    .order-button, .details {
+        font-size: 14px; /* Adjust button font size */
+        padding: 8px 12px; /* Adjust button padding */
+    }
+}
     
 
 

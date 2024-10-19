@@ -198,54 +198,82 @@ footer a:hover {
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
     li {
-        margin-right: 50px; /* Reduce margin between items */
+        margin-right: 50px;
+        /* Reduce margin between items */
     }
 
     h2 {
-        font-size: 50px;/* Decrease heading size */
+        font-size: 50px;
+        /* Decrease heading size */
     }
 
     .button {
-        font-size: 18px; /* Reduce button font size */
+        font-size: 18px;
+        /* Reduce button font size */
     }
 }
 
 @media (max-width: 900px) {
     nav.navbar {
-        flex-direction: column;/* Stack navigation items vertically */
+        flex-direction: column;
+        /* Stack navigation items vertically */
     }
 
     li {
-        margin: 10px 0;/* Adjust margin for vertical layout */
+        margin: 10px 0;
+        /* Adjust margin for vertical layout */
     }
 
     h2 {
-        font-size: 40px;/* Further decrease heading size */
+        font-size: 40px;
+        /* Further decrease heading size */
     }
 
     .button {
-        width: 100%; /* Full width button */
+        width: 100%;
+        /* Full width button */
     }
 }
 
 @media (max-width: 600px) {
     body {
-        background-color: #333; /* Change background color for small screens */
+        background-color: #333;
+        /* Change background color for small screens */
     }
 
     nav.navbar {
-        background-color: #444;/* Darker navbar for better visibility */
+        background-color: rgba(83, 59, 59, 0.9);
+        /* Darker navbar for better visibility */
     }
 
     .button {
-        background-color: rgb(50, 1, 1);/* Change button color */
-    }
-
-    .button2 {
-        background-color: rgb(60, 1, 1); /* Change auth button color */
+        background-color: rgb(50, 1, 1);
+        /* Change button color */
     }
 
     h2 {
-        font-size: 30px; /* Decrease heading size */
+        font-size: 30px;
+        /* Decrease heading size */
+    }
+
+    footer {
+        background-color: rgba(83, 59, 59, 0.9);
+        /* Darker footer for better visibility */
+    }
+}
+
+@media (max-width: 400px) {
+    .auth-buttons {
+        flex-direction: column;
+        /* Stack auth buttons vertically */
+        margin-top: 20px;
+        /* Add space above auth buttons */
+    }
+
+    .button2 {
+        width: 100%;
+        /* Full width for auth buttons */
+        margin-bottom: 10px;
+        /* Space between buttons */
     }
 }

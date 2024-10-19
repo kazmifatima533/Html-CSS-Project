@@ -28,86 +28,121 @@
 </html>
 
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-        background-image: url("Images/broo.jpg");
-        background-repeat: no-repeat;
-        background-size: 100vw 100vh ;
-        background-position: center;
-        background-attachment: fixed;
-        font-family: "Helvetica Neue", Helvetica, sans-serif;
-        color: #333;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    /* Header styling */
-    header {
-        width: 100%;
-        text-align: center;
-    }
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("Images/broo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+/* Header styling */
+header {
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.7);
+    padding-top: 90px;
+}
+
+/* Main container styling */
+main {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%; /* Make it responsive */
+    margin-top: 40px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #6b0c0c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #550909;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
     header h1 {
-        color: white;
-        font-size: 48px;
-        font-weight: bold;
-        margin: 0;
-        text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.7);
-        padding-top: 90px;
-        margin-right: 70px;
-        margin-left: 40px;
-        
+        font-size: 36px; /* Decrease header size */
     }
 
     main {
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        max-width: 400px;
-        width: 100%;
-        margin-top: 40px;
-       
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    label {
-        margin-bottom: 5px;
-        font-weight: bold;
-        color: #333;
+        padding: 20px; /* Reduce padding on smaller screens */
     }
 
     input, textarea {
-        padding: 10px;
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
-    }
-
-    textarea {
-        resize: vertical;
+        font-size: 14px; /* Decrease font size for inputs */
     }
 
     button {
-        background-color: #6b0c0c;
-        color: white;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        font-size: 18px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
+        font-size: 16px; /* Decrease button font size */
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        padding: 15px; /* Further reduce padding */
     }
 
-    button:hover {
-        background-color: #550909;
+    header h1 {
+        font-size: 28px; /* Further decrease header size */
     }
+
+    input, textarea {
+        font-size: 12px; /* Further decrease font size for inputs */
+    }
+
+    button {
+        font-size: 14px; /* Further decrease button font size */
+    }
+}
 </style>
